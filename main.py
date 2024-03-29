@@ -38,7 +38,7 @@ with col1:
     4) kopeeri ükshaaval tarbijasegmentide lõikes äpi väljundteksti kõnealuse teenuse tutvustuslehele.")
 
 with col2:
-    st.image(image='KARRL_transparent.png', caption='Probably best cleaning servicein the Estonia)
+    st.image(image='KARRL_transparent.png', caption='Probably best cleaning service in the Estonia')
 
 st.markdown("## Enter Your Content To Convert")
 
