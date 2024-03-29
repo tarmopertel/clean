@@ -59,7 +59,7 @@ with col1:
         ('18-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80-100'))
     
 def get_hobby():
-    input_text = st.text_input(label="Customers main hobby", key="hobby_input")
+    input_text = st.text_input(label="Customers main place of residence", key="hobby_input")
     return input_text
 
 hobby_input = get_hobby()
@@ -89,7 +89,7 @@ if content_input:
 
     llm = load_LLM(openai_api_key=openai_api_key)
 
-    prompt_with_content = prompt.format(agegroup=option_agegroup, hobby=hobby_input, content=content_input)
+    prompt_with_content = prompt.format(agegroup=option_agegroup, residence=hobby_input, content=content_input)
 
     formatted_content = llm(prompt_with_content)
 
